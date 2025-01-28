@@ -25,7 +25,7 @@ The code is organized into functions that interact with an array of book objects
 ### Example Usage
 
 ```javascript
-const { showBooks, filterAvailability, filterAuthor, filterPrice, updateAvailability } = require('./bookstore');
+const { showBooks, filterAvailability, filterAuthor, filterPrice, updateAvailability } = require('./main');
 
 // View all books
 console.log(showBooks());
