@@ -4,7 +4,7 @@ const { bookstore, filterAuthor } = require("../main");
 const feature = loadFeature("features/display-author.feature");
 
 defineFeature(feature, (test) => {
-  test("User views books filtered by author in the book store", ({
+  test("User views books filtered by author in the bookstore", ({
     given,
     when,
     then,
@@ -12,7 +12,7 @@ defineFeature(feature, (test) => {
     let filteredBooks;
     let author;
 
-    given("the user is on the book store", () => {
+    given("the user is on the bookstore", () => {
       expect(Array.isArray(bookstore)).toBe(true);
       expect(bookstore.length).toBeGreaterThan(0);
     });
@@ -22,7 +22,7 @@ defineFeature(feature, (test) => {
       filteredBooks = filterAuthor(author);
     });
 
-    then("the book store displays all books filtered by author", () => {
+    then("the bookstore displays all books filtered by author", () => {
       expect(filteredBooks.every((book) => book.author === author)).toBe(true);
     });
   });

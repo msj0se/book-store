@@ -1,4 +1,4 @@
-//all the books in book store
+//all the books in bookstore
 const bookstore = [
   {
     title: "The Housemaid",

@@ -1,6 +1,6 @@
-Feature: Display books filtered by price in the book store
+Feature: Display books filtered by price in the bookstore
 
-  Scenario: User views books filtered by price in the book store
-    Given the user is on the book store
+  Scenario: User views books filtered by price in the bookstore
+    Given the user is on the bookstore
     When the user selects the price filter from highest to lowest
-    Then the book store displays all books filtered by price
+    Then the bookstore displays all books filtered by price

@@ -9,12 +9,12 @@ defineFeature(feature, (test) => {
     let bookExists;
     let availabilityStatus;
 
-    given('the user is on the book store', () => {
+    given('the user is on the bookstore', () => {
       expect(bookstore).toBeDefined();
       expect(Array.isArray(bookstore)).toBe(true);
     });
 
-    when(/^the user inputs the "(.*)" and the book exists in the book store$/, (bookName) => {
+    when(/^the user inputs the "(.*)" and the book exists in the bookstore$/, (bookName) => {
       bookName = bookName.replace(/"/g, '').trim();
       bookExists = bookstore.some(book => book.title === bookName);
       if (bookExists) {
@@ -30,7 +30,7 @@ defineFeature(feature, (test) => {
       }
     });
 
-    then(/^the book store displays the book as "(.*)"$/, (expectedAvailability) => {
+    then(/^the bookstore displays the book as "(.*)"$/, (expectedAvailability) => {
       const expected = expectedAvailability === "available" ? true : false;
       expect(updatedBook.availability).toBe(expected);
     });

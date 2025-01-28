@@ -1,9 +1,9 @@
-Feature: Add book to book store
+Feature: Add book to bookstore
 
-  Scenario Outline: User adds a book to the book store
-    Given the user is on the book store
+  Scenario Outline: User adds a book to the bookstore
+    Given the user is on the bookstore
     When the user adds a book with the following details: "<title>", "<author>", "<price>", "<availability>"
-    Then the book store has the new book
+    Then the bookstore has the new book
 
     Examples:
       | title             | author           | price | availability |

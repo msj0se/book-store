@@ -3,10 +3,10 @@ const { bookstore } = require("../main");
 const feature = loadFeature("features/add-book.feature");
 
 defineFeature(feature, (test) => {
-  test("User adds a book to the book store", ({ given, when, then }) => {
+  test("User adds a book to the bookstore", ({ given, when, then }) => {
     let book;
 
-    given("the user is on the book store", () => {
+    given("the user is on the bookstore", () => {
       expect(Array.isArray(bookstore)).toBe(true);
     });
 
@@ -24,7 +24,7 @@ defineFeature(feature, (test) => {
       }
     );
 
-    then("the book store has the new book", () => {
+    then("the bookstore has the new book", () => {
       let found = false;
 
       for (let currentBook = 0; currentBook < bookstore.length; currentBook++) {

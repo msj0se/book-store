@@ -1,6 +1,6 @@
-Feature: Display all books in the book store
+Feature: Display all books in the bookstore
 
-  Scenario: User views all books in the book store
-    Given the user is on the book store
+  Scenario: User views all books in the bookstore
+    Given the user is on the bookstore
     When the user searches for all books
-    Then the book store displays all the books
+    Then the bookstore displays all the books
